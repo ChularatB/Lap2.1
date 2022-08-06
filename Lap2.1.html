@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Lap2</title>
+</head>
+
+<body>
+    <form action="form-echo.php" method="get">
+        <div style="text-align: center;">
+
+            <h1>ข้อ 1</h1>
+            <form>
+                <label for="nname">ชื่อเต็ม/ชื่อย่อสาขาวิชา</label><br>
+                <input type="text" id="nname" name="nname"><br><br>
+
+                <label for="money">จำนวนเงินที่จะโอน</label><br>
+                <input type="text" id="money" name="money"><br><br>
+
+                <label for="food">อาหารที่ชื่อ 5 ชนิดที่ชื่อชอบจากมากไปน้อย <br>
+                    <label>อันดับ 1</label>
+                    <input type="text" id="food" name="อาหารอันดับ1" size="11"><br>
+                    <label>อันดับ 2</label>
+                    <input type="text" id="food" name="อาหารอันดับ2" size="11"><br>
+                    <label>อันดับ 3</label>
+                    <input type="text" id="food" name="อาหารอันดับ3" size="11"><br>
+                    <label>อันดับ 4</label>
+                    <input type="text" id="food" name="อาหารอันดับ4" size="11"><br>
+                    <label>อันดับ 5</label>
+                    <input type="text" id="food" name="อาหารอันดับ5" size="11"><br><br>
+                </label><br>
+
+                <label for="electricitybills">ค่าไฟฟ้า 3 เดือนที่ผ่านมา</label><br>
+                <input type="month" id="electricitybills" name="electricitybills" min="2022-01" value="2022-08"><br><br>
+
+                <label for="IDD">รหัสบัตรประชาชน</label><br>
+                <input type="text" id="IDD" name="ID" maxlength="13"><br><br>
+
+                <label for="FAVbook">ความพึงพอใจต่อหนังสือเล่มนี้</label><br>
+                <input type="range" id="FAVbook" name="favbook" list="tickmarks" value="0">
+                <datalist id="tickmarks">
+                    <option value="0"></option>
+                    <option value="10"></option>
+                    <option value="20"></option>
+                    <option value="30"></option>
+                    <option value="40"></option>
+                    <option value="50"></option>
+                    <option value="60"></option>
+                    <option value="70"></option>
+                    <option value="80"></option>
+                    <option value="90"></option>
+                    <option value="100"></option>
+                </datalist>
+                <br><br>
+
+                <label for="sick">อาการป่วย</label><br>
+                <textarea id="sick" name="sick" style="resize: none;" rows="10" cols="50"
+                    placeholder="อาการป่วย"></textarea><br><br>
+
+                <label>ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</label>
+                <div>
+                    <input type="radio" id="yes" name="vaccine" value="เคยแล้ว" checked>
+                    <label for="yes">เคยแล้ว</label>
+                </div>
+                <div>
+                    <input type="radio" id="no" name="vaccine">
+                    <label for="no">ไม่เคย</label>
+                </div><br><br>
+
+                <label for="password">รหัสผ่าน</label><br>
+                <input type="password" id="password" name="password"><br><br>
+
+                <label>เวลาเริ่มเรียนและสิ้นสุดเวลาเรียน</label>
+                <div>
+                    <label for="เริ่มเรียน">เวลาเริ่มเรียน</label>
+                    <input type="time" id="เริ่มเรียน" name="เวลาเริ่มเรียน">
+                </div>
+                <div>
+                    <label for="เลิกเรียน">เวลาเลิกเรียน</label>
+                    <input type="time" id="เลิกเรียน" name="เวลาเลิกเรียน">
+                </div><br><br>
+
+                <label for="datemeetdoc">วันเวลาที่ต้องไปพบแพทย์</label><br>
+                <input type="date" id="datemeetdoc" name="วันเวลาที่ต้องไปพบแพทย์" value="2022-08-04" min="2022-08-04"><br><br>
+
+                <input type="submit">
+            </form>
+
+            
+
+        </div>
+</body>
+
+</html>
